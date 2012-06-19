@@ -1,183 +1,189 @@
-@namespace url(httpwww.w3.org1999xhtml);
+@namespace url(http://www.w3.org/1999/xhtml);
 
- (Original) Background pattern used from httpwww.dinpattern.com20110829charcoal
- New one used from httpwww.noqta.itdromoscopio #40
- CSS changes colours, soon background images if I wanna.
- To apply, get Stylish for Firefox(Or other custom style platform SEE #1), then make a new CSS style for 
-  powdertoy.co.uk
- and paste this file into the editor box.
- HOW TO INSTALL ON VARIOUS PLATFORMS 
- Opera httpwww.opera.comdocsusercss
- Firefox httpuserstyles.orgstyles66266the-powder-toy-custom-css
- IE httpwebdesign.about.comodcsshthtcssuseriewin.htm
- Safari httpwebdesign.about.comodcsshthtcssusersafari.htm
- Chrome httpschrome.google.comwebstoredetailfjnbnpbmkenffdnngjfgmeleoegfcffe
- By boxmein 2012, I allow remakes of any kind while attribution is provided to original code.
+/**
+* (Original) Background pattern used from http://www.dinpattern.com/2011/08/29/charcoal/
+* New one used from http://www.noqta.it/dromoscopio/ #40
+* And neweset one by jenn4 http://img88.imageshack.us/img88/843/backgroundnu.jpg
+* CSS changes colours and background.
+* To apply, get Stylish for Firefox(Or other custom style platform SEE #1), then make a new CSS style for
+* * powdertoy.co.uk
+* and paste this file into the editor box.
+** HOW TO INSTALL ON VARIOUS PLATFORMS:
+* Opera: http://www.opera.com/docs/usercss/
+* Firefox: http://userstyles.org/styles/66266/the-powder-toy-custom-css
+* IE: http://webdesign.about.com/od/css/ht/htcssuseriewin.htm
+* Safari: http://webdesign.about.com/od/css/ht/htcssusersafari.htm
+* Chrome: https://chrome.google.com/webstore/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe
+* By boxmein 2012, I allow remakes of any kind while attribution is provided to original code.
+**/
 
-
-@-moz-document domain(powdertoy.co.uk) {
- Links 
+@-moz-document domain("powdertoy.co.uk") {
+/* Links */
 html {
- Replace the URL with your own to change the background-pattern! 
- (Original BG)background-image url('httpboxmein.web44.netimagescharcoalcharcoal.gif') !important; 
-background-image url('httpwww.noqta.itdromoscopioimgpattern_40.gif') !important;
-background-attachment fixed !important;
-background-repeat repeat !important; 
+
+background-image: url('http://img88.imageshack.us/img88/843/backgroundnu.jpg') !important;
+background-attachment: fixed !important;
+background-repeat: repeat !important; 
     }
 input, textarea, .Tag {
-background-color #404040 !important;
-border 1px solid #222 !important;
-background-image none !important;
-color #fff !important;
+background-color: #404040 !important;
+border: 1px solid #222 !important;
+background-image: none !important;
+color: #fff !important;
 }
 .Conversation { 
-border-bottom-color #222 !important; 
+border-bottom-color: #222 !important; 
 }
 a {
-color#96979A !important;
-text-shadow1px 1px 1px #000;
+color:#BDA4A4 !important;
+text-shadow:1px 1px 1px #F0000;
 }
 
 a.Item {
-backgroundnone !important;
+background:none !important;
 }
 
-ahover {
-color#393A40 !important;
+a:hover {
+color:#FF0000 !important;
 }
 
- ------------------------------ 
+p, div { color: #D15A5A !important } )
+
+code {
+color:#D10D0D;
+}
+/* ------------------------------ 
  Global colouring tags! 
- Controls area on top of boxes 
-.Pageheader,.Pageheader ,.ButtonLink,.PostForm,.GroupInfo,.fSaveDetails {
-background-color#383838 !important;
-color#96979A !important;
-text-shadow2px 0 3px rgba(0,0,0,0.7) !important;
+ Controls area on top of boxes */
+.Pageheader,.Pageheader *,.ButtonLink,.PostForm,.GroupInfo,.fSaveDetails {
+background-color:#383838 !important;
+color:#96979A !important;
+text-shadow:2px 0 3px rgba(0,0,0,0.7) !important;
 }
 
- Unread count, nice and simple. 
+/* Unread count, nice and simple. */
 .CUnreadCount {
-background-color#8B0000 !important;
+background-color:#8B0000 !important;
 }
 
- Various messages -- and now save box too! 
+/* Various messages -- and now save box too! */
 .Warning,.Error,.Information {
-background-color#222 !important;
-bordernone !important;
-margin-bottom5px;
+background-color:#222 !important;
+border:none !important;
+margin-bottom:5px;
 }
 
 .ParentCategory {
-color#DDD !important;
+color:#DDD !important;
 }
 
- Topic page numbers with icons 
+/* Topic page numbers with icons */
 .Item,.Active {
-text-shadow2px 0 3px rgba(0,0,0,0.7) !important;
+text-shadow:2px 0 3px rgba(0,0,0,0.7) !important;
 }
 
 .TopContainer {
-color#ccc;
-text-shadow2px 2px 3px rgba(0,0,0,0.7) !important;
+color:#ccc;
+text-shadow:2px 2px 3px rgba(0,0,0,0.7) !important;
 }
 
- TinyMCE and other! 
+/* TinyMCE and other! */
 input {
-background-color#FFF !important;
-background-imagenone !important;
-resizevertical !important;
+background-color:#FFF !important;
+background-image:none !important;
+resize:vertical !important;
 }
 
- Various links except menu items and categories and forum titles 
+/* Various links except menu items and categories and forum titles */
 a.Link {
-color#ccc !important;
+color:#ccc !important;
 }
 
 .Meta span em {
-box-shadow0 0 5px #FFF !important;
-color#fff !important;
+box-shadow:0 0 5px #FFF !important;
+color:#fff !important;
 }
 
- Top TPT text 
+/* Top "TPT" text */
 h1 {
-bordernone !important;
-color#FFF !important;
-font-weight700;
+border:none !important;
+color:#FFF !important;
+font-weight:700;
 }
 
 .Page,.Subpage,a.Link,input,input.EditPlain,.SaveDetails,.Download,.Meta em {
-background-color#383838 !important;
+background-color:#383838 !important;
 }
 
- ------------------------------ 
+/* ------------------------------ */
 .Page,.Subpage {
-box-shadow0 0 5px rgba(0,0,0,0.7);
-color#FFF !important;
+box-shadow:0 0 5px rgba(0,0,0,0.7);
+color:#FFF !important;
 }
 
- Forum post categories 
+/* Forum post categories */
 li {
-background-color#272727 !important;
+background-color:#272727 !important;
 }
 
 .MessageList {
-border-radius3px;
+border-radius:3px;
 }
 
- 
-.OtherF  input {
-color#FFF !important;
+/* */
+.OtherF > input {
+color:#FFF !important;
 }
 
- Your own post brighter than regular, darker than op 
+/* Your own post brighter than regular, darker than op */
 .Mine {
-background-color#333 !important;
+background-color:#333 !important;
 }
 
 .Developer {
-background-colorrgba(0, 150, 255, 0.1) !important;
+background-color:rgba(0, 150, 255, 0.1) !important;
 }
 
 .Moderator {
-background-colorrgba(0, 255, 0, 0.1) !important;
+background-color:rgba(0, 255, 0, 0.1) !important;
 }
 
 .Administrator {
-background-colorrgba(0, 0, 255, 0.1) !important;
+background-color:rgba(0, 0, 255, 0.1) !important;
 }
 
-blockquotebefore,blockquoteafter {
-colorrgba(255,255,255,0.5);
-content;
-font-size50px !important;
+blockquote:before,blockquote:after {
+color:rgba(255,255,255,0.5);
+content:"\"";
+font-size:50px !important;
 }
 
-.blockquoteafter {
-floatright;
+.blockquote:after {
+float:right;
 }
 
 .mceContentBody p {
-background-colorrgba(0,0,0,0) !important;
+background-color:rgba(0,0,0,0) !important;
 }
 
- ------------------------------ 
- Wiki 
-div.SubPage ,div.Content,div.SubPage.NoPad {
-background-color#383838 !important;
-border-color#222 !important;
-color#fefefe !important;
+/* ------------------------------ 
+ Wiki */
+div.SubPage *,div.Content,div.SubPage.NoPad {
+background-color:#383838 !important;
+border-color:#222 !important;
+color:#fefefe !important;
 }
 
-a.NPage,.Op,.ConUnread,.mceLayout,.Pagefooter,.mceToolbar,.mceToolbar ,#AddReplyMessage_ifr {
-background-color#555 !important;
+a.NPage,.Op,.ConUnread,.mceLayout,.Pagefooter,.mceToolbar,.mceToolbar *,#AddReplyMessage_ifr {
+background-color:#555 !important;
 }
 
-.MessageList,.Subpage,.Page,.Pageheader,li,.Item,.Active,input,a.Link,.Download,.RecentContainer,.PostForm,.Meta em,ul,.mceToolbar,.mceToolbar ,.Pagefooter {
-border-color#222 !important;
+.MessageList,.Subpage,.Page,.Pageheader,li,.Item,.Active,input,a.Link,.Download,.RecentContainer,.PostForm,.Meta em,ul,.mceToolbar,.mceToolbar *,.Pagefooter {
+border-color:#222 !important;
 }
 
 .mceLayout,#AddReplyMessage_ifr html,#AddReplyMessage_ifr p {
-background-imagenone !important;
+background-image:none !important;
 }
 }
 }
