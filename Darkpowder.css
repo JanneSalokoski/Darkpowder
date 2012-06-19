@@ -1,0 +1,172 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("powdertoy.co.uk") {
+/* Links */
+html {
+
+background-image: url('http://img88.imageshack.us/img88/843/backgroundnu.jpg') !important;
+background-attachment: fixed !important;
+background-repeat: repeat !important; 
+    }
+input, textarea, .Tag {
+background-color: #404040 !important;
+border: 1px solid #222 !important;
+background-image: none !important;
+color: #fff !important;
+}
+.Conversation { 
+border-bottom-color: #222 !important; 
+}
+a {
+color:#BDA4A4 !important;
+text-shadow:1px 1px 1px #F0000;
+}
+
+a.Item {
+background:none !important;
+}
+
+a:hover {
+color:#FF0000 !important;
+}
+
+p, div { color: #D15A5A !important } )
+
+code {
+color:#D10D0D;
+}
+/* ------------------------------ 
+ Global colouring tags! 
+ Controls area on top of boxes */
+.Pageheader,.Pageheader *,.ButtonLink,.PostForm,.GroupInfo,.fSaveDetails {
+background-color:#383838 !important;
+color:#96979A !important;
+text-shadow:2px 0 3px rgba(0,0,0,0.7) !important;
+}
+
+/* Unread count, nice and simple. */
+.CUnreadCount {
+background-color:#8B0000 !important;
+}
+
+/* Various messages -- and now save box too! */
+.Warning,.Error,.Information {
+background-color:#222 !important;
+border:none !important;
+margin-bottom:5px;
+}
+
+.ParentCategory {
+color:#DDD !important;
+}
+
+/* Topic page numbers with icons */
+.Item,.Active {
+text-shadow:2px 0 3px rgba(0,0,0,0.7) !important;
+}
+
+.TopContainer {
+color:#ccc;
+text-shadow:2px 2px 3px rgba(0,0,0,0.7) !important;
+}
+
+/* TinyMCE and other! */
+input {
+background-color:#FFF !important;
+background-image:none !important;
+resize:vertical !important;
+}
+
+/* Various links except menu items and categories and forum titles */
+a.Link {
+color:#ccc !important;
+}
+
+.Meta span em {
+box-shadow:0 0 5px #FFF !important;
+color:#fff !important;
+}
+
+/* Top "TPT" text */
+h1 {
+border:none !important;
+color:#FFF !important;
+font-weight:700;
+}
+
+.Page,.Subpage,a.Link,input,input.EditPlain,.SaveDetails,.Download,.Meta em {
+background-color:#383838 !important;
+}
+
+/* ------------------------------ */
+.Page,.Subpage {
+box-shadow:0 0 5px rgba(0,0,0,0.7);
+color:#FFF !important;
+}
+
+/* Forum post categories */
+li {
+background-color:#272727 !important;
+}
+
+.MessageList {
+border-radius:3px;
+}
+
+/* */
+.OtherF > input {
+color:#FFF !important;
+}
+
+/* Your own post brighter than regular, darker than op */
+.Mine {
+background-color:#333 !important;
+}
+
+.Developer {
+background-color:rgba(0, 150, 255, 0.1) !important;
+}
+
+.Moderator {
+background-color:rgba(0, 255, 0, 0.1) !important;
+}
+
+.Administrator {
+background-color:rgba(0, 0, 255, 0.1) !important;
+}
+
+blockquote:before,blockquote:after {
+color:rgba(255,255,255,0.5);
+content:"\"";
+font-size:50px !important;
+}
+
+.blockquote:after {
+float:right;
+}
+
+.mceContentBody p {
+background-color:rgba(0,0,0,0) !important;
+}
+
+/* ------------------------------ 
+ Wiki */
+div.SubPage *,div.Content,div.SubPage.NoPad {
+background-color:#383838 !important;
+border-color:#222 !important;
+color:#fefefe !important;
+}
+
+a.NPage,.Op,.ConUnread,.mceLayout,.Pagefooter,.mceToolbar,.mceToolbar *,#AddReplyMessage_ifr {
+background-color:#555 !important;
+}
+
+.MessageList,.Subpage,.Page,.Pageheader,li,.Item,.Active,input,a.Link,.Download,.RecentContainer,.PostForm,.Meta em,ul,.mceToolbar,.mceToolbar *,.Pagefooter {
+border-color:#222 !important;
+}
+
+.mceLayout,#AddReplyMessage_ifr html,#AddReplyMessage_ifr p {
+background-image:none !important;
+}
+}
+}
