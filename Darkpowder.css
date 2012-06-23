@@ -47,10 +47,30 @@ a:hover {
 color:#FF0000 !important;
 }
 
-p, div { color: #D15A5A !important } )
+p, div { 
+color: #D10000
+}
+
+p {
+text-shadow: 0px 2px 2px #000000;
+}
+
+.Post {
+text-shadow: 0px 5px 5px #000000; !important
+}
 
 code {
 color:#D10D0D;
+}
+
+hr {
+color:#C90000;
+}
+
+.Wrapper
+.Extra
+.Meta {
+	border-color:#FF0000 @border-dark !important;
 }
 /* ------------------------------ 
  Global colouring tags! 
@@ -123,7 +143,7 @@ color:#FFF !important;
 
 /* Forum post categories */
 li {
-background-color:#272727 !important;
+background-color:#272727;
 }
 
 .MessageList {
@@ -137,15 +157,27 @@ color:#FFF !important;
 
 /* Your own post brighter than regular, darker than op */
 .Mine {
-background-color:#333 !important;
+background-color:#2E2222 !important;
+color:#C90000 !important;
+}
+
+.Op {
+background-color:#312533 !important;
 }
 
 .Developer {
 background-color:rgba(0, 150, 255, 0.1) !important;
 }
 
-.Moderator {
+/*.Moderator {
 background-color:rgba(0, 255, 0, 0.1) !important;
+}
+*/
+
+.Moderator {
+/*background-color:#2E2822 !important:*/
+background-color:#2E2822 !important;
+/*background-color:#2E251D !important;*/
 }
 
 .Administrator {
