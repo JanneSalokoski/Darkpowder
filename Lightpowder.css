@@ -17,113 +17,113 @@
 .main-menu {
   width: 100%;
   height: 34px;
-  background-color: #383838 !important;
+  background-color: #ffeeab !important;
   background-repeat: repeat-x;
-  background-image: linear-gradient(bottom, #2f2f2f 0%, #222222 100%) !important;
-  background-image: -o-linear-gradient(bottom, #2f2f2f 0%, #222222 100%) !important;
-  background-image: -ms-linear-gradient(bottom, #2f2f2f 0%, #222222 100%) !important;
-  background-image: -moz-linear-gradient(bottom, #2f2f2f 0%, #222222 100%) !important;
-  background-image: -webkit-linear-gradient(bottom, #2f2f2f 0%, #222222 100%) !important;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #2f2f2f), color-stop(100%, #222222)) !important;
-  border: 1px solid #222222 !important;
+  background-image: linear-gradient(bottom, #fff3c4 0%, #ffeeab 100%) !important;
+  background-image: -o-linear-gradient(bottom, #fff3c4 0%, #ffeeab 100%) !important;
+  background-image: -ms-linear-gradient(bottom, #fff3c4 0%, #ffeeab 100%) !important;
+  background-image: -moz-linear-gradient(bottom, #fff3c4 0%, #ffeeab 100%) !important;
+  background-image: -webkit-linear-gradient(bottom, #fff3c4 0%, #ffeeab 100%) !important;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #fff3c4), color-stop(100%, #ffeeab)) !important;
+  border: 1px solid #ffeeab !important;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
   box-shadow: 0px 3px 27px rgba(0, 0, 0, 0.08);
 }
 .form-actions {
-  background-color: #1e1e1e !important;
-  -webkit-box-shadow: 0px 1px 0px #222222 inset !important;
-  -moz-box-shadow: 0px 1px 0px #222222 inset !important;
-  -ms-box-shadow: 0px 1px 0px #222222 inset !important;
-  -o-box-shadow: 0px 1px 0px #222222 inset !important;
-  box-shadow: 0px 1px 0px #222222 inset !important;
+  background-color: #ffe478 !important;
+  -webkit-box-shadow: 0px 1px 0px #ffeeab inset !important;
+  -moz-box-shadow: 0px 1px 0px #ffeeab inset !important;
+  -ms-box-shadow: 0px 1px 0px #ffeeab inset !important;
+  -o-box-shadow: 0px 1px 0px #ffeeab inset !important;
+  box-shadow: 0px 1px 0px #ffeeab inset !important;
 }
 .outside-header, .breadcrumb {
-  background-image: linear-gradient(bottom, #2f2f2f 0%, #222222 100%) !important;
-  background-image: -o-linear-gradient(bottom, #2f2f2f 0%, #222222 100%) !important;
-  background-image: -ms-linear-gradient(bottom, #2f2f2f 0%, #222222 100%) !important;
-  background-image: -moz-linear-gradient(bottom, #2f2f2f 0%, #222222 100%) !important;
-  background-image: -webkit-linear-gradient(bottom, #2f2f2f 0%, #222222 100%) !important;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #2f2f2f), color-stop(100%, #222222)) !important;
+  background-image: linear-gradient(bottom, #fff3c4 0%, #ffeeab 100%) !important;
+  background-image: -o-linear-gradient(bottom, #fff3c4 0%, #ffeeab 100%) !important;
+  background-image: -ms-linear-gradient(bottom, #fff3c4 0%, #ffeeab 100%) !important;
+  background-image: -moz-linear-gradient(bottom, #fff3c4 0%, #ffeeab 100%) !important;
+  background-image: -webkit-linear-gradient(bottom, #fff3c4 0%, #ffeeab 100%) !important;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #fff3c4), color-stop(100%, #ffeeab)) !important;
 }
 .active a {
-  background-image: linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -o-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -ms-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -moz-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -webkit-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #484848), color-stop(100%, #3c3c3c)) !important;
+  background-image: linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -o-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -ms-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -moz-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -webkit-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #fffdf7), color-stop(100%, #fff8de)) !important;
 }
 .disabled a, .breadcrumb, .outside-header {
-  border-color: #222222 !important;
-  -webkit-box-shadow: 0px 1px 0px #222222 inset !important;
-  -moz-box-shadow: 0px 1px 0px #222222 inset !important;
-  -ms-box-shadow: 0px 1px 0px #222222 inset !important;
-  -o-box-shadow: 0px 1px 0px #222222 inset !important;
-  box-shadow: 0px 1px 0px #222222 inset !important;
+  border-color: #ffeeab !important;
+  -webkit-box-shadow: 0px 1px 0px #ffeeab inset !important;
+  -moz-box-shadow: 0px 1px 0px #ffeeab inset !important;
+  -ms-box-shadow: 0px 1px 0px #ffeeab inset !important;
+  -o-box-shadow: 0px 1px 0px #ffeeab inset !important;
+  box-shadow: 0px 1px 0px #ffeeab inset !important;
 }
 .btn-info, .btn {
-  background-image: linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -o-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -ms-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -moz-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -webkit-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #484848), color-stop(100%, #3c3c3c)) !important;
+  background-image: linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -o-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -ms-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -moz-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -webkit-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #fffdf7), color-stop(100%, #fff8de)) !important;
   background-color: #484848 !important;
 }
 .alert-warning {
-  background-color: #222222 !important;
-  border-color: #222222 !important;
+  background-color: #ffeeab !important;
+  border-color: #ffeeab !important;
 }
 .btn-info:hover, .btn:hover {
-  background-image: linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -o-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -ms-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -moz-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -webkit-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #484848), color-stop(100%, #3c3c3c)) !important;
+  background-image: linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -o-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -ms-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -moz-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -webkit-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #fffdf7), color-stop(100%, #fff8de)) !important;
 }
 .btn-group > .dropdown-toggle {
-  background-image: linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -o-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -ms-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -moz-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -webkit-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #484848), color-stop(100%, #3c3c3c)) !important;
+  background-image: linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -o-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -ms-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -moz-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -webkit-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #fffdf7), color-stop(100%, #fff8de)) !important;
   background-color: #484848 !important;
 }
 .dropdown-menu {
-  background-color: #383838 !important;
+  background-color: #ffeeab !important;
 }
 .main-menu a {
   background-color: none !important;
-  border-color: #222222 !important;
+  border-color: #ffeeab !important;
 }
 .container,
 .pagination ul a,
 .btn-info,
 .btn-group > .dropdown-toggle,
 .form-actions {
-  border-color: #222222 !important;
+  border-color: #ffeeab !important;
 }
 .main-menu li > a:hover {
-  background-image: linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -o-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -ms-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -moz-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -webkit-linear-gradient(bottom, #484848 0%, #3c3c3c 100%) !important;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #484848), color-stop(100%, #3c3c3c)) !important;
+  background-image: linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -o-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -ms-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -moz-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -webkit-linear-gradient(bottom, #fffdf7 0%, #fff8de 100%) !important;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #fffdf7), color-stop(100%, #fff8de)) !important;
 }
 html, body {
-  background-image: url('http://img88.imageshack.us/img88/843/backgroundnu.jpg') !important;
+  background-image: url('http://img839.imageshack.us/img839/6963/bgwhiteb.jpg') !important;
   background-attachment: fixed !important;
 }
 body {
-  color: #cf1e0a !important;
+  color: #ff4800 !important;
 }
 a {
-  color: #96979a !important;
+  color: #ffa200 !important;
   -webkit-text-shadow: 1px 1px 1px #000000 !important;
   -moz-text-shadow: 1px 1px 1px #000000 !important;
   -ms-text-shadow: 1px 1px 1px #000000 !important;
@@ -136,24 +136,24 @@ input, button, textarea {
 a:hover {
   /* omg, addition! */
 
-  color: #b8b9bc !important;
+  color: #ffc422 !important;
 }
 a.Link {
   color: #CCC !important;
 }
 /* Mixins */
 .border {
-  border: 1px solid #222222 !important;
+  border: 1px solid #ffeeab !important;
 }
 /* Vendor prefix stuff, repetitive code [Remember to call with .something ()  so it gets the values OK]*/
 input, textarea, .Tag {
   background-color: #404040 !important;
   color: #FFF !important;
   resize: vertical;
-  border: 1px solid #222222 !important;
+  border: 1px solid #ffeeab !important;
 }
 .Conversation {
-  border: 1px solid #222222 !important;
+  border: 1px solid #ffeeab !important;
   margin-bottom: -1px;
 }
 .Pageheader *, .Pageheader {
@@ -170,7 +170,7 @@ a.Item {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7) !important;
 }
 .ScoreMeh {
-  color: #cf1e0a !important;
+  color: #ff4800 !important;
 }
 .ButtonLink,
 .fSaveDetails,
@@ -179,8 +179,8 @@ a.Item {
 .Pageheader *,
 .PostForm,
 .ButtonLink {
-  background-color: #383838 !important;
-  color: #96979a;
+  background-color: #ffeeab !important;
+  color: #ffa200;
   background-image: none !important;
 }
 .CUnreadCount {
@@ -195,7 +195,7 @@ a.Item {
 }
 /* Awesome code tag vs pre tag thread test (Yay, this is official!) */
 code, pre {
-  background-color: #222222 !important;
+  background-color: #ffeeab !important;
   border: 1px solid #cccccc;
   white-space: pre;
   /* No wrap, saves spaces to correct level */
@@ -211,7 +211,7 @@ pre {
   color: #FFF !important;
 }
 .modal-header, .modal-body, .modal-footer {
-  background-color: #383838 !important;
+  background-color: #ffeeab !important;
 }
 /* Copyright and footer messages */
 .Copyright, .FooterExtra, .Header li a {
@@ -223,7 +223,7 @@ pre {
 }
 /* Various warning / error messages */
 .Warning, .Error, .Information {
-  background-color: #222222 !important;
+  background-color: #ffeeab !important;
   border: none !important;
   margin-bottom: 5px;
 }
@@ -255,10 +255,10 @@ blockquote {
   color: #FFF !important;
 }
 .Meta {
-  border-color: #222222 !important;
+  border-color: #ffeeab !important;
 }
 div {
-  text-shadow: 4px 4px 4px #210704 !important;
+  text-shadow: 0px 0px 0px #241616 !important;
 }
 /* New */
 a.Link,
@@ -270,11 +270,11 @@ input.EditPlain,
 .Subpage,
 .View *,
 .container.contents {
-  background-color: #383838 !important;
+  background-color: #ffeeab !important;
 }
 /* In forums perhaps */
 li {
-  background-color: #272727 !important;
+  background-color: #FFD191 !important;
 }
 /* Top links, eg "Download", "Forum", ... */
 #Header li {

@@ -1,0 +1,316 @@
+/*
+ * The Powder Toy style re-write in LESS.
+ * Uses background from jenn4 Image = http://img88.imageshack.us/img88/843/backgroundnu.jpg , http://www.facebook.com/jenn4-art.
+ * (c)2012 jenn4, jenn4-art. credit from original source and all the hard work for boxmein.
+ *
+ * To stylers: Warning, code is extremely beautiful and well formatted, reading it may cause high satisfaction!
+ * To-do: write CSS? Anything more
+
+*/
+
+/* Constants */
+/* Variable names pretty self-explaining or whatnot */
+/*
+//simpless:!minify
+*/
+
+
+	@bg-image: url('http://img839.imageshack.us/img839/6963/bgwhiteb.jpg');
+	@border-dark: #FFEEAB; 
+	@bg-bright: #FFEEAB; 
+	@link-color: #FFA200;
+	@unread-red: #8B0000;
+	@warning-color: @border-dark;
+	@body-font-color: #FF4800;
+	@top-bar-g-top: lighten(@border-dark, 5%);
+	@top-bar-g-btm: @border-dark;
+	@shadow: 0px 0px 0px #241616;
+	
+	@own-post-color: #211204;
+	@mod-post-color: #1C2E1C;
+	@dev-post-color: #1C2D2E;
+	@admin-post-color: #1C1D2E;
+	@op-post-color: #2E1C1C;
+
+	
+	/* Newest main page stuff */
+.main-menu { 
+	width: 100%;
+	height: 34px;
+	background-color: @bg-bright !important;
+	background-repeat: repeat-x;
+	.linGradient ();
+	border: 1px solid @border-dark !important;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	box-shadow: 0px 3px 27px rgba(0, 0, 0, 0.08);
+}
+.form-actions {
+	background-color: darken(@bg-bright, 10%) !important;
+	.insetShadow ();
+}
+.outside-header, .breadcrumb {
+	.linGradient ();
+}
+.active a {
+	.brighterGradient ();
+}
+.disabled a, .breadcrumb, .outside-header {
+	border-color: @border-dark !important;
+	.insetShadow ();
+}
+.btn-info, .btn {
+	.brighterGradient ();
+	background-color: #484848 !important;
+}
+.alert-warning {
+	background-color: @warning-color !important;
+	border-color: @border-dark !important;
+}
+.btn-info:hover, .btn:hover {
+	.brighterGradient ();
+}
+.btn-group > .dropdown-toggle {
+	.brighterGradient ();
+	background-color: #484848 !important;
+}
+.dropdown-menu {
+	background-color: @bg-bright !important;
+}
+.main-menu a {
+	background-color: none !important;
+	border-color: @border-dark !important;
+}
+.container, .pagination ul a, .btn-info, .btn-group > .dropdown-toggle, .form-actions {
+	border-color: @border-dark !important;
+}
+.main-menu  li > a:hover {
+	.brighterGradient ();
+}
+html, body {
+	background-image: @bg-image !important;
+	background-attachment: fixed !important;
+}
+body {
+	color: @body-font-color !important;
+}
+a {
+	color: @link-color !important;
+	.smallshadow ();
+}
+input, button, textarea {
+	background-image: none !important;
+}
+a:hover {
+	/* omg, addition! */
+	color: @link-color + #222 !important;
+}
+a.Link {
+	color: #CCC !important;
+}
+	/* Mixins */
+.border { 
+	border: 1px solid @border-dark !important;
+} 
+
+			/* Vendor prefix stuff, repetitive code [Remember to call with .something ()  so it gets the values OK]*/
+.smallshadow (@x: 1px, @y: 1px, @blur: 1px, @color: #000) {
+	-webkit-text-shadow: @arguments !important;
+	   -moz-text-shadow: @arguments !important;
+	    -ms-text-shadow: @arguments !important;
+	     -o-text-shadow: @arguments !important;
+	        text-shadow: @arguments !important;
+}
+
+.bigshadow (@x: 2px, @y: 2px, @blur: 3px, @color: rgba(0,0,0,0.7)) {
+	-webkit-text-shadow: @arguments !important;
+	   -moz-text-shadow: @arguments !important;
+	    -ms-text-shadow: @arguments !important;
+	     -o-text-shadow: @arguments !important;
+	        text-shadow: @arguments !important;
+}
+.linGradient (@colortop: @top-bar-g-top, @point1: 0%, @colorbottom: @top-bar-g-btm, @point2: 100%) {
+	background-image:         linear-gradient(bottom, @colortop @point1, @colorbottom @point2) !important;
+	background-image:      -o-linear-gradient(bottom, @colortop @point1, @colorbottom @point2) !important;
+	background-image:     -ms-linear-gradient(bottom, @colortop @point1, @colorbottom @point2) !important;
+	background-image:    -moz-linear-gradient(bottom, @colortop @point1, @colorbottom @point2) !important;
+	background-image: -webkit-linear-gradient(bottom, @colortop @point1, @colorbottom @point2) !important;
+	background-image:        -webkit-gradient(linear, left bottom, left top, color-stop(@point1, @colortop), color-stop(@point2, @colorbottom)) !important;
+}
+.insetShadow (@x: 0px, @y: 1px, @blur: 0px, @color: @border-dark) {
+	-webkit-box-shadow: @arguments inset !important;
+	   -moz-box-shadow: @arguments inset !important;
+	    -ms-box-shadow: @arguments inset !important;
+	     -o-box-shadow: @arguments inset !important;
+	        box-shadow: @arguments inset !important;
+}
+.brighterGradient (@percent: 10%) {
+	.linGradient (lighten(@top-bar-g-top, @percent), 0%, lighten(@top-bar-g-btm, @percent), 100%);
+}
+input, textarea, .Tag {
+	background-color: #404040 !important;
+	color: #FFF !important;
+	resize: vertical;
+	.border;
+}
+
+.Conversation {
+	.border;
+	margin-bottom: -1px;
+}
+.Pageheader *, .Pageheader {
+	text-shadow: none !important;
+}
+#PageheaderSearch input {
+	border-bottom: none !important;
+}
+a.Item{
+	.bigshadow ();
+}
+.ScoreMeh { 
+	color: @body-font-color !important; 
+}
+.ButtonLink, .fSaveDetails, .GroupInfo, .Pageheader, .Pageheader *, .PostForm, .ButtonLink {
+	background-color: @bg-bright !important;
+	color: @link-color;
+	background-image: none !important;
+}
+
+.CUnreadCount {
+	background-color: @unread-red !important;
+}
+
+.Item, .Active, .TopContainer {
+	.bigshadow ();
+}
+	/* Awesome code tag vs pre tag thread test (Yay, this is official!) */
+code, pre {
+	background-color: @border-dark !important; 
+	border: 1px solid rgb(204,204,204);
+	white-space: pre; 	/* No wrap, saves spaces to correct level */
+	padding: 1px 2px;
+	margin: 1px;
+}
+
+code {
+	display: block;
+}
+
+pre {
+	display: inline;
+	color: #FFF !important;
+}
+
+.modal-header, .modal-body, .modal-footer {
+	background-color: @bg-bright !important;
+}
+
+	/* Copyright and footer messages */
+.Copyright, .FooterExtra, .Header li a {
+	.smallshadow ();
+}
+	/* Various warning / error messages */
+.Warning, .Error, .Information {
+	background-color: @warning-color !important;
+	border: none !important;
+	margin-bottom: 5px;
+}
+
+.ParentCategory {
+	color: #DDD !important;
+}
+
+.Item, .Active {
+	.bigshadow (2px, 0px);
+}
+
+.TopContainer {
+	color: #CCC;
+	.bigshadow ();
+}
+
+	/* Make block quotes not take up half the post screen */
+blockquote {
+	margin: -30px 10px;
+}
+
+	/* Those "Unread" and "New" notices in Recents and categories */
+.Meta span em {
+	box-shadow: 0px 0px 5px #FFF !important;
+	color: #FFF !important;
+	
+}
+.Meta {
+	border-color: @border-dark !important;
+}
+
+div {
+	text-shadow: @shadow !important;
+}
+																					/* New */
+a.Link, .Download, input.EditPlain, .Meta em, .Page, .SaveDetails, .Subpage, .View *, .container.contents {
+	background-color: @bg-bright !important;
+}
+	/* In forums perhaps */
+li {
+	background-color: #FFD191 !important;
+}
+	/* Top links, eg "Download", "Forum", ... */
+#Header li {
+	background: none !important;
+}
+h1, .download-buttons {
+	color: #FFF !important;
+	font-weight: normal;
+}
+.MessageList {
+	border-radius: 3px;
+}
+	/* Forum post colors:  */
+.Mine {
+	background-color: @own-post-color !important;
+}
+
+.Developer {
+	background-color: @dev-post-color !important;
+}
+
+.Moderator {
+	background-color: @mod-post-color !important;
+}
+
+.Administrator {
+	background-color: @admin-post-color !important;
+}
+
+.Op {
+	background-color: @op-post-color !important;
+}
+
+	/* TinyMCE colours and stuff */
+a.NPage,.ConUnread,.mceLayout,.Pagefooter,.mceToolbar,.mceToolbar *,#AddReplyMessage_ifr {
+background-color:#555 !important;
+}
+
+.MessageList,.Subpage,.Page,.Pageheader,li,.Item,.Active,input,a.Link,.Download,.RecentContainer,.PostForm,.Meta em,ul,.mceToolbar,.mceToolbar *,.Pagefooter, .View * {
+border-color:#222 !important;
+}
+
+.mceLayout,#AddReplyMessage_ifr html,#AddReplyMessage_ifr p {
+background-image:none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
