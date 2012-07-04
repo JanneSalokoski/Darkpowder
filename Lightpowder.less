@@ -1,36 +1,39 @@
-/*
+/**
  * The Powder Toy style re-write in LESS.
- * Uses background from jenn4 Image = http://img88.imageshack.us/img88/843/backgroundnu.jpg , http://www.facebook.com/jenn4-art.
- * (c)2012 jenn4, jenn4-art. credit from original source and all the hard work for boxmein.
- *
- * To stylers: Warning, code is extremely beautiful and well formatted, reading it may cause high satisfaction!
- * To-do: write CSS? Anything more
+ * Uses pattern from noqta.it
+ * 2012: boxmein. Remixing allowed, but credit is needed.
+ * 
+ * To stylers: hope you won't get a headache reading this code.
+ * In redo progress, new front page and all :O
 
+ 
 */
-
-/* Constants */
-/* Variable names pretty self-explaining or whatnot */
 /*
-//simpless:!minify
+less:!minify
 */
 
-
-	@bg-image: url('http://img839.imageshack.us/img839/6963/bgwhiteb.jpg');
-	@border-dark: #FFEEAB; 
-	@bg-bright: #FFEEAB; 
-	@link-color: #FFA200;
-	@unread-red: #8B0000;
+	/* Constants */
+		/* Variable names pretty self-explaining or whatnot */
+	@bg-image: url('http://i.imgur.com/CAh6x.jpg');
+	@border-dark: #E8B131; 
+	@bg-bright: #FFE9B5; 
+	
+	@link-color: #9EF5FF;
+	@unread-red: #FF6A00;
+	@h1-color: #ADF7FF; /* Used by "The Powder Toy" text, forum titles, various menu titles, those Unread and New boxes near topics.*/
+	
 	@warning-color: @border-dark;
-	@body-font-color: #FF4800;
+	@body-font-color: #FFF;
 	@top-bar-g-top: lighten(@border-dark, 5%);
 	@top-bar-g-btm: @border-dark;
-	@shadow: 0px 0px 0px #241616;
+	@parent-color: #DDD; /* The text below recent posts saying "in Announcements" */
 	
-	@own-post-color: #211204;
-	@mod-post-color: #1C2E1C;
-	@dev-post-color: #1C2D2E;
-	@admin-post-color: #1C1D2E;
-	@op-post-color: #2E1C1C;
+	
+	@own-post-color: #333;
+	@mod-post-color: rgba(0, 255, 0, 0.05); /* Slight tinting */
+	@dev-post-color: rgba(0, 150, 255, 0.05);
+	@admin-post-color: rgba(0, 0, 255, 0.05);
+	@op-post-color: #555;
 
 	
 	/* Newest main page stuff */
@@ -53,11 +56,10 @@
 .outside-header, .breadcrumb {
 	.linGradient ();
 }
-.active a {
+.active a, .item a:hover {
 	.brighterGradient ();
 }
 .disabled a, .breadcrumb, .outside-header {
-	border-color: @border-dark !important;
 	.insetShadow ();
 }
 .btn-info, .btn {
@@ -66,10 +68,13 @@
 }
 .alert-warning {
 	background-color: @warning-color !important;
-	border-color: @border-dark !important;
 }
 .btn-info:hover, .btn:hover {
 	.brighterGradient ();
+}
+/* Turns icons white */
+[class^="icon-"], [class*="icon-"] {
+	background-image: url("http://powdertoy.co.uk/Design/Images/glyphicons-halflings-white.png") !important;
 }
 .btn-group > .dropdown-toggle {
 	.brighterGradient ();
@@ -80,9 +85,10 @@
 }
 .main-menu a {
 	background-color: none !important;
-	border-color: @border-dark !important;
 }
-.container, .pagination ul a, .btn-info, .btn-group > .dropdown-toggle, .form-actions {
+.container, .pagination ul a, .btn-info, .btn-group > .dropdown-toggle, .form-actions, .main-menu a, 
+.alert-warning, .disabled a, .breadcrumb, .outside-header, 
+.active a, .item a:hover  {
 	border-color: @border-dark !important;
 }
 .main-menu  li > a:hover {
@@ -150,11 +156,31 @@ a.Link {
 }
 input, textarea, .Tag {
 	background-color: #404040 !important;
-	color: #FFF !important;
+	color: @h1-color !important;
 	resize: vertical;
 	.border;
 }
 
+
+	/* Awesome code tag vs pre tag thread test (Yay, this is official!) */
+code, pre {
+	background-color: @border-dark !important; 
+	border: 1px solid rgb(204,204,204);
+	white-space: pre; 	/* No wrap, saves spaces to correct level */
+	padding: 1px 2px;
+	margin: 1px;
+}
+
+code {
+	display: block;
+}
+
+pre {
+	display: inline !important;
+	color: #FFF !important;
+}
+
+/* Everything below will become obsolete soon, except stuff marked with New */
 .Conversation {
 	.border;
 	margin-bottom: -1px;
@@ -184,28 +210,6 @@ a.Item{
 .Item, .Active, .TopContainer {
 	.bigshadow ();
 }
-	/* Awesome code tag vs pre tag thread test (Yay, this is official!) */
-code, pre {
-	background-color: @border-dark !important; 
-	border: 1px solid rgb(204,204,204);
-	white-space: pre; 	/* No wrap, saves spaces to correct level */
-	padding: 1px 2px;
-	margin: 1px;
-}
-
-code {
-	display: block;
-}
-
-pre {
-	display: inline;
-	color: #FFF !important;
-}
-
-.modal-header, .modal-body, .modal-footer {
-	background-color: @bg-bright !important;
-}
-
 	/* Copyright and footer messages */
 .Copyright, .FooterExtra, .Header li a {
 	.smallshadow ();
@@ -218,7 +222,7 @@ pre {
 }
 
 .ParentCategory {
-	color: #DDD !important;
+	color: @parent-color !important;
 }
 
 .Item, .Active {
@@ -237,16 +241,12 @@ blockquote {
 
 	/* Those "Unread" and "New" notices in Recents and categories */
 .Meta span em {
-	box-shadow: 0px 0px 5px #FFF !important;
-	color: #FFF !important;
+	box-shadow: 0px 0px 5px @h1-color !important;
+	color: @h1-color !important;
 	
 }
 .Meta {
 	border-color: @border-dark !important;
-}
-
-div {
-	text-shadow: @shadow !important;
 }
 																					/* New */
 a.Link, .Download, input.EditPlain, .Meta em, .Page, .SaveDetails, .Subpage, .View *, .container.contents {
@@ -254,14 +254,14 @@ a.Link, .Download, input.EditPlain, .Meta em, .Page, .SaveDetails, .Subpage, .Vi
 }
 	/* In forums perhaps */
 li {
-	background-color: #FFD191 !important;
+	background-color: #272727 !important;
 }
 	/* Top links, eg "Download", "Forum", ... */
 #Header li {
 	background: none !important;
 }
 h1, .download-buttons {
-	color: #FFF !important;
+	color: @h1-color !important;
 	font-weight: normal;
 }
 .MessageList {
@@ -300,15 +300,6 @@ border-color:#222 !important;
 .mceLayout,#AddReplyMessage_ifr html,#AddReplyMessage_ifr p {
 background-image:none !important;
 }
-
-
-
-
-
-
-
-
-
 
 
 
